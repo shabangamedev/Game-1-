@@ -1,14 +1,23 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
-      public void CompleteLevel()
+public GameObject LevelCompleteUI;
+public void CompleteLevel()
     {
-        Debug.Log("You won");
+        LevelCompleteUI.SetActive(true);
     }
-    void OnTriggerEnter()
+    
+    private void OnTriggerEnter(Collider Other)
     {
-        CompleteLevel();
+        if (Other.tag=="Player")
+        {
+
+            CompleteLevel();
+            
+        
+        }
     }
 }

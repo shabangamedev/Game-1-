@@ -4,6 +4,8 @@ public class GameManager : MonoBehaviour
 {
     bool GameHasEnded = false;
     public float restartDelay = 1f;
+    
+    public GameObject LevelCompeleteUI;
    
     public void EndGame()
     {
