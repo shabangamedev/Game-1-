@@ -1703,6 +1703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f81aaf779c5f6f4da73b6da0b91c167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop: {fileID: 728784128}
   LevelCompleteUI: {fileID: 1547386451}
 --- !u!1001 &1956583581
 PrefabInstance:
